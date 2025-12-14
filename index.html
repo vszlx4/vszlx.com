@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <meta name="theme-color" content="#2b2d31">
+  <meta name="title" content="Ahmed Mughram" />
+  <meta name="description" content="Personal portfolio for Ahmed Mughram. Made in 2024" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vszlx.com/" />
+  <meta property="og:title" content="Ahmed Mughram" />
+  <meta property="og:description" content="Personal portfolio for Ahmed Mughram. Made in 2024" />
+  <meta property="og:image" content="./assets/images/logos/header.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://vszlx.com/" />
+  <meta property="twitter:title" content="Ahmed Mughram" />
+  <meta property="twitter:description" content="Personal portfolio for Ahmed Mughram. Made in 2024" />
+  <meta property="twitter:image" content="./assets/images/logos/header.png" />
+
+  <title>Ahmed Mughram</title>
+
+  <!--
+    - Fav Icon
+  -->
+  <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+  
+  <!--
+    - Custom CSS
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - Google Fonts
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!--
+    - #MAIN
+    -->
+  <main>
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+      
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img id="avatar" src="./assets/images/logos/my-avatar-1.png" alt="Ahmed Mughram" width="80">
+        </figure>
+        
+        <div class="info-content">
+          <h1 class="name" title="Ahmed Mughram">Ahmed Mughram</h1>
+          <p class="title"><span class="autoType"></span></p>
+        </div>
+        
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+          var typed = new Typed(".autoType", {
+            strings: ["Software Architecture", "UI/UX Designer"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+            smartBackspace: false,
+            backDelay: 3000,
+          });
+        </script>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          
+          <li class="contact-item">
+            
+            <div class="icon-box">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+            
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:contact@vszlx.com" class="contact-link">contact@vszlx.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            
+            <div class="icon-box">
+              <ion-icon name="call"></ion-icon>
+            </div>
+            
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+966536290790" class="contact-link">+966-53-629-0790</a>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/vszlx4/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/vszlx4" target="_blank" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/vszlx4" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="info-content">
+        <p class="footer">© 2025 — 3.2rc76+b25102</p>
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+          
+          <li class="navbar-item">
+            <button onclick="changeAvatar('./assets/images/logos/my-avatar-1.png')" class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button onclick="changeAvatar('./assets/images/logos/my-avatar-2.png')" class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button onclick="changeAvatar('./assets/images/logos/my-avatar-3.png')" class="navbar-link" data-nav-link>Certificates</button>
+          </li>
+          
+          <li class="navbar-item">
+            <button id="navbar-toggle-btn" class="navbar-link">
+              <svg width="12" height="12" viewBox="0 0 199 159" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.27069 159H47.4026C49.7377 159 52.0098 158.243 53.8779 156.842C54.6228 156.283 55.2923 155.63 55.8697 154.9L103.505 94.6263C103.834 94.2097 104.203 93.826 104.606 93.4805C108.113 90.4742 113.407 90.9425 116.333 94.5177L117.672 96.1549C119.178 97.9948 120 100.299 120 102.676V129V129.496C120 145.595 132.904 158.722 149 159H194.694C194.898 159 195.101 158.986 195.303 158.957C197.197 158.686 198.686 157.197 198.957 155.303C198.986 155.101 199 154.898 199 154.694V81C199 78.7909 197.209 77 195 77H151C144.373 77 139 71.6274 139 65V4C139 1.79086 137.209 0 135 0H88C87.3597 0 86.7456 0.254354 86.2929 0.707107L86 1L1.30632 107.36C0.460526 108.422 0 109.739 0 111.097V155V155.729C0 157.328 1.1559 158.693 2.73299 158.956C2.91069 158.985 3.09054 159 3.27069 159Z" fill="white"/></svg>
+              </button>
+            
+          </li>
+          
+        </ul>
+
+        <!-- NAVBAR POPUP -->
+        <div id="navbar-popup" class="navbar-popup">
+          <div class="popup-content" id="track-info">
+              <div class="track-meta">
+                <img id="local-image" class="local-art" src="./assets/images/logos/img3.2rc73+b25102.png" alt="local artwork">
+              </div>
+
+              <div class="track-player">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4GzpLa5Gyq5mJWgSUC6CtS?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+          </div>
+
+      </nav>
+
+
+      
+      <!--
+        - #ABOUT
+      -->
+      
+      <article class="about  active" data-page="about">
+        <div class="main-gradient-circle-1"></div>
+
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+— Greetings! I am <b>Ahmed Mughram</b>, a <b>Software Architectural Developer & UI/UX Designer</b>, mastering the art of crafting seamless user experiences while developing resilient, scalable software systems with elegance and precision.<br><br>
+
+— As a <b>Programmer</b>, my approach transcends mere coding; I architect intricate, multifaceted systems with intentional clarity, addressing even the most complex challenges with refined logic. From implementing advanced algorithms to optimizing structural efficiency, my work exemplifies technical depth—delivering solutions that are not only functional but engineered to endure.<br><br>
+
+— My passion for <b>UI/UX design</b> is equally profound, where I blend creativity with a deep sense of empathy. I believe that true innovation lies in understanding the nuances of the human experience, and I strive to create interfaces that are both visually captivating and inherently intuitive. Whether in the initial wireframing of concepts or refining the subtle interactions of a design, I remain steadfast in my commitment to user-centricity, ensuring every digital touchpoint feels natural and engaging.<br><br>
+          </p>
+        </section>
+        
+        <!--
+          - clients carousel
+        -->
+
+        <section class="clients">
+          <h3 class="h3 clients-title">Familiar With<br><br></h3>
+            <div class="clients-container">
+              <div class="clients-slide">
+                <img src="./assets/images/clients/logo-1-color.svg" style="display:inline;">
+                <img src="./assets/images/clients/logo-2-color.svg" style="display:inline;">
+                <img src="./assets/images/clients/logo-3-color.svg" style="display:inline;">
+                <img src="./assets/images/clients/logo-4-color.svg" style="display:inline;">
+                <img src="./assets/images/clients/logo-5-color.svg" style="display:inline;">
+                <img src="./assets/images/clients/logo-6-color.svg" style="display:inline;">
+                <img src="./assets/images/clients/logo-7-color.svg" style="display:inline;">
+                <img src="./assets/images/clients/logo-8-color.svg" style="display:inline;">
+                <img src="./assets/images/clients/logo-9-color.svg" style="display:inline;">
+                <img src="./assets/images/clients/logo-10-color.svg" style="display:inline;">
+                <img src="./assets/images/clients/logo-11-color.svg" style="display:inline;">
+                <img src="./assets/images/clients/logo-12-color.svg" style="display:inline;">
+                <img src="./assets/images/clients/logo-13-color.svg" style="display:inline;">
+                <img src="./assets/images/clients/logo-14-color.svg" style="display:inline;">
+                <img src="./assets/images/clients/logo-15-color.svg" style="display:inline;">
+              </div>
+            </div>
+            <script>
+              var copy = document.querySelector(".clients-slide").cloneNode(true);
+              document.querySelector(".clients-container").appendChild(copy);
+            </script>
+        </section>
+        
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+        <div class="resume-gradient-circle-1"></div>
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <!-- TIMELINE -->
+
+
+        <!-- Business -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            
+            <h3 class="h3">Career</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">DSShield</h4>
+
+              <span>2025 — Present</span>
+              <p class="timeline-text">
+                As a <b>Software Programming Intern</b> at <b>DSShield</b>, I contribute to the design and development of internal systems and tools, supporting the company’s core IT infrastructure. Working closely with the IT annex team, I assist in implementing scalable backend solutions, debugging complex issues, and enhancing software performance across development projects. My role bridges foundational programming practices with architectural thinking, enabling me to support both immediate development needs and long-term system goals within a collaborative engineering environment.
+              </p>
+              
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Saqr (PDCO LLC)</h4>
+
+              <span>2025 — 2025</span>
+              <p class="timeline-text">
+                Worked as a <b>Contract Designer</b> for <b>Saqr (PDCO LLC)</b>, focusing on creating and refining the brand's core visual identity. My responsibilities included designing essential graphics, marketing materials, and digital assets that supported the company's overall branding and communication.
+              </p>
+              
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Processor Dimensions Co. (PDCO LLC)</h4>
+
+              <span>2023 — 2025</span>
+              <p class="timeline-text">
+                In my role as <b>Operations & Business Development Manager</b>, I led technical operations and business growth initiatives, managed complex customer issues, and fostered partnerships. I focused on optimizing operational processes, developing internal tools, and improving website functionality. Additionally, I oversaw business negotiations and served as a key decision-maker to balance technical and business priorities.
+              </p>
+              
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">J7 Code (Webstore)</h4>
+
+              <span>2022 — 2023</span>
+              <p class="timeline-text">
+                I oversaw operations and strategic initiatives while designing all visual elements for the webstore, including product images and branding materials, which enhanced the overall aesthetic and functionality of the online shopping experience.
+              </p>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">VRoot Hosting (Webstore)</h4>
+
+              <span>2021 — 2023</span>
+              <p class="timeline-text">
+                Responsible for overseeing operations and strategic planning while serving as the lead developer for the company's web store. Additionally, represented the company in various professional engagements and partnerships to enhance collaboration and business opportunities.
+              </p>
+              
+            </li>
+            
+          </ol>
+        </section>
+
+        <!-- Experience -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="bulb-outline"></ion-icon>
+            </div>
+            
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Tech Stack & Programming Expertise</h4>
+
+              <span>2019 — Present</span>
+
+              <p class="timeline-text">
+                With expertise in Python development since 2019, I specialise in API integration and command-line interface (CLI) applications. I previously freelanced on Fiverr, tackling complex software development projects, including advanced algorithms, and rigorously testing them to ensure optimal performance. Additionally, I have experience in JavaScript development (2022–2023), applying it to website development and API integration. I obtained a certificate from freeCodeCamp Academy, showcasing my dedication to mastering programming concepts and continuously improving my coding and web development skills.
+              </p>
+              
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">DSA, DBMS, AA</h4>
+
+              <span>2021 — Present</span>
+
+              <p class="timeline-text">
+                I study Data Structures and Algorithms (DSA) to refine problem-solving skills and optimise software performance. With Database Management Systems (DBMS), I enhance data organisation and integrity, while Advanced Algorithms (AA) enables me to tackle complex computational challenges effectively.
+              </p>
+              
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">ML, AI, DevOps</h4>
+
+              <span>2023 — Present</span>
+
+              <p class="timeline-text">
+                I focus on Machine Learning (ML) and Artificial Intelligence (AI) to build intelligent systems and uncover data insights. Alongside, I delve into DevOps to unify development and operations, ensuring efficient workflows and scalable, resilient software solutions.
+              </p>
+              
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Full-Stack Development</h4>
+
+              <span>2021 — Present</span>
+
+              <p class="timeline-text">
+                Specialising in web development, I focus on designing intuitive user interfaces and experiences (UI/UX) while also integrating Full-Stack development to ensure seamless functionality, robust application structures, and cohesive frontend-backend interaction.
+              </p>
+              
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">UI/UX, Graphic Design</h4>
+
+              <span>2015 — Present</span>
+
+              <p class="timeline-text">
+                Specialising in User Interface (UI) design, I utilise Figma, Adobe Illustrator, and Adobe XD to craft intuitive, engaging interfaces for diverse industries and individuals. With a background in graphic design using Photoshop, I transitioned fully to UI/UX design.
+              </p>
+              
+            </li>
+            
+          </ol>
+        </section>
+
+        <!-- Education -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+            
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">King Saud University</h4>
+
+              <span>2025 — Present</span>
+
+              <p class="timeline-text">
+                I am studying for a bachelor's degree at King Saud University, where I continue to develop a thoughtful and disciplined approach to inquiry, communication, and structured analysis. This academic journey deepens my understanding of complex ideas and sharpens my ability to engage with diverse perspectives in a meaningful way.</p>
+              
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Kangaroo Mawhiba - Mathematics & Science Academy</h4>
+
+              <span>2018 — 2019</span>
+
+              <p class="timeline-text"> 
+                Participated in the Kangaroo Mawhiba Mathematics and Science Academy, achieving second place in the Eastern Province of Saudi Arabia in the Mawhiba competition for Mathematics and Science. This accomplishment reflects my strong aptitude for analytical thinking and problem-solving in scientific disciplines.
+              </p>
+              
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">LEGO Mindstorms NXT Brick (9841) Education</h4>
+
+              <span>2015 — 2016</span>
+
+              <p class="timeline-text">
+                Participated in the LEGO Mindstorms NXT Brick (9841) education program at Industrial Jubail Schools, gaining hands-on experience in robotics and programming. This opportunity fostered my early interest in technology and engineering, developing foundational skills in problem-solving and innovation.
+              </p>
+              
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Mawhiba - Multiple Cognitive Ability Test</h4>
+
+              <span>2014 — 2015</span>
+
+              <p class="timeline-text">
+                Participated in the Mawhiba Multiple Cognitive Ability Test, achieving a score of 680 out of 880 at Jubail Industrial City. This achievement highlighted my cognitive strengths across various domains, reflecting an early aptitude for logical reasoning and problem-solving.
+              </p>
+              
+            </li>
+            
+          </ol>
+        </section>
+
+
+        <!-- SKILLS -->
+
+
+        <!-- Development Skills -->
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Development Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              
+              <div class="title-wrapper">
+                <h5 class="h5">Programming Expertise</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+              
+            </li>
+
+            <li class="skills-item">
+              
+              <div class="title-wrapper">
+                <h5 class="h5">Full-Stack Development</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+              
+            </li>
+            
+            <li class="skills-item">
+              
+              <div class="title-wrapper">
+                <h5 class="h5">Database Management</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+              
+            </li>
+
+            <li class="skills-item">
+              
+              <div class="title-wrapper">
+                <h5 class="h5">Linux Comprehension</h5>
+                <data value="45">45%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 45%;"></div>
+              </div>
+              
+            </li>
+            
+          </ul>
+          
+        </section>
+
+        <!-- Lingual Skills -->
+        <section class="skill">
+
+          <h3 class="h3 skills-title"><br>Linguistics</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              
+              <div class="title-wrapper">
+                <h5 class="h5">Arabic Language  (Native)</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+              
+            </li>
+
+            <li class="skills-item">
+              
+              <div class="title-wrapper">
+                <h5 class="h5">English Language (C1-C2)</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+              
+            </li>
+
+            <li class="skills-item">
+              
+              <div class="title-wrapper">
+                <h5 class="h5">Russian Language (A1)</h5>
+                <data value="15">15%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 15%;"></div>
+              </div>
+              
+            </li>
+
+            <li class="skills-item">
+              
+              <div class="title-wrapper">
+                <h5 class="h5">Chinese Language (A1)</h5>
+                <data value="10">10%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 10%;"></div>
+              </div>
+              
+            </li>
+            
+          </ul>
+          
+        </section>
+
+      </article>
+
+      <!--
+        - #CERTIFICATES
+      -->
+
+      <article class="certificates" data-page="certificates">
+        <div class="certificates-gradient-circle-1"></div>
+
+        <header>
+          <h2 class="h2 article-title">Certificates</h2>
+        </header>
+
+        <section class="projects">
+
+          <!-- Filter List -->
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="all  active" data-filter-btn>All</button>
+            </li>
+            
+            <li class="filter-item">
+              <button data-filter-btn>freeCodeCamp</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Cisco</button>
+            </li>
+            
+            <li class="filter-item">
+              <button data-filter-btn>OpenEDG</button>
+            </li>
+            
+            <li class="filter-item">
+              <button data-filter-btn>Python Institute</button>
+            </li>
+            
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select Category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+              
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>freeCodeCamp</button>
+              </li>
+              
+              <li class="select-item">
+                <button data-select-item>Cisco</button>
+              </li>
+              
+              <li class="select-item">
+                <button data-select-item>OpenEDG</button>
+              </li>
+              
+              <li class="select-item">
+                <button data-select-item>Python Institute</button>
+              </li>
+              
+            </ul>
+            
+          </div>
+
+          <!-- Items -->
+          <ul class="project-list">
+
+            <!-- freecodecamp scp -->
+            <li class="project-item  active" data-filter-item data-category="freecodecamp">
+              <a>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="finger-print-outline"></ion-icon>
+                  </div>
+                  
+                  <img src="./assets/images/certificates/SCP.png" alt="freecodecamp" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Scientific Computing with Python</h3>
+                <a class="project-verification" style="display:inline;" href="https://freecodecamp.org/certification/vszlx4/scientific-computing-with-python-v7/" target="_blank">Verify<ion-icon name="link"></ion-icon></a>
+                <span class="project-description">Jun, 2023 | 300 hours</span>
+              </a>
+            </li>
+
+            <!-- freecodecamp jsdsa -->
+            <li class="project-item  active" data-filter-item data-category="freecodecamp">
+              <a>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="finger-print-outline"></ion-icon>
+                  </div>
+                  
+                  <img src="./assets/images/certificates/JSDSA.png" alt="freecodecamp" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">JavaScript DSA</h3>
+                <a class="project-verification" style="display:inline;" href="https://www.freecodecamp.org/certification/vszlx4/javascript-algorithms-and-data-structures/" target="_blank">Verify<ion-icon name="link"></ion-icon></a>
+                <span class="project-description">Feb, 2025 | 300 hours</span>
+              </a>
+            </li>
+            
+            <!-- pcep -->
+            <li class="project-item  active" data-filter-item data-category="python institute">
+              <a>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="finger-print-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/certificates/PCEPC1.png" alt="python institute" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Python Essentials I (PCEP)</h3>
+                <a class="project-verification" style="display:inline;" href="https://www.credly.com/earner/earned/badge/ad50c3ef-41fd-4a15-be50-de2f9701958d" target="_blank">Verify<ion-icon name="link"></ion-icon></a>
+                <span class="project-description">Sep, 2024 | 30 hours</span>
+              </a>
+            </li>
+
+            <!-- pcap -->
+            <li class="project-item  active" data-filter-item data-category="python institute">
+              <a>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="finger-print-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/certificates/PCAPC1.png" alt="python institute" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Python Essentials II (PCAP)</h3>
+                <a class="project-verification" style="display:inline;" href="https://www.credly.com/earner/earned/badge/8f15873c-f36f-4293-93e0-d6a708e490ed" target="_blank">Verify<ion-icon name="link"></ion-icon></a>
+                <span class="project-description">Sep, 2024 | 40 hours</span>
+              </a>
+            </li>
+
+            <!-- english for iT 1 -->
+            <li class="project-item  active" data-filter-item data-category="openedg">
+              <a>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="finger-print-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/certificates/ENGLISHforIT1.png" alt="english for it" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">English for IT I</h3>
+                <a class="project-verification" style="display:inline;" href="https://www.credly.com/earner/earned/badge/dd9355d1-d6f1-41b1-a26f-c3c901abeea3" target="_blank">Verify<ion-icon name="link"></ion-icon></a>
+                <span class="project-description">Sep, 2024 | 50 hours</span>
+              </a>
+            </li>
+
+            <!-- english for iT 2 -->
+            <li class="project-item  active" data-filter-item data-category="openedg">
+              <a>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="finger-print-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/certificates/ENGLISHforIT2.png" alt="english for it" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">English for IT II</h3>
+                <a class="project-verification" style="display:inline;" href="https://www.credly.com/earner/earned/badge/eab613d5-3605-4f28-9dd8-bc57d5fe36bc" target="_blank">Verify<ion-icon name="link"></ion-icon></a>
+                <span class="project-description">Sep, 2024 | 50 hours</span>
+              </a>
+            </li>
+
+            <!-- cisco introduction to cybersecurity -->
+            <li class="project-item  active" data-filter-item data-category="cisco">
+              <a>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="finger-print-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/certificates/ICS.png" alt="cisco" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Introduction to CyberSecurity</h3>
+                <a class="project-verification" style="display:inline;" href="https://www.credly.com/earner/earned/badge/078a0347-d315-44f8-a028-07d1279fdc59" target="_blank">Verify<ion-icon name="link"></ion-icon></a>
+                <span class="project-description">Sep, 2024 | 6 hours</span>
+              </a>
+            </li>
+
+          </ul>
+          
+        </section>
+
+      </article>
+
+    </div>
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
